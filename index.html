@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- 기본 SEO 태그 -->
-    <title>남편 점수 테스트</title>
+    <title>남편 점수 테스트 - 내 남편의 진짜 능력치는?</title>
     <meta name="description" content="때로는 듬직하고, 때로는 웬수 같은 내 남편! 10개의 간단한 테스트로 그의 진짜 능력치를 알아보세요! 아내만 아는 남편의 점수, 지금 바로 확인해보세요.">
-    <link rel="canonical" href="https://your-website-url.com/"> <!-- 나중에 실제 웹사이트 주소로 변경하세요 -->
+    <link rel="canonical" href="https://scoremyoppa.site/">
+    
+    <!-- 파비콘 -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
     <!-- 소셜 미디어 공유용 (Open Graph) -->
-    <meta property="og:title" content="남편 점수 테스트">
+    <meta property="og:title" content="남편 점수 테스트 - 내 남편의 진짜 능력치는?">
     <meta property="og:description" content="애증의 내 남편, 점수로 환산하면 몇 점일까? 지금 바로 확인해보세요!">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://your-website-url.com/"> <!-- 나중에 실제 웹사이트 주소로 변경하세요 -->
-    <meta property="og:image" content="https://your-website-url.com/og-image.jpg"> <!-- 나중에 실제 이미지 주소로 변경하세요 (1200x630 권장) -->
+    <meta property="og:url" content="https://scoremyoppa.site/">
+    <meta property="og:image" content="https://scoremyoppa.site/images/og-image.jpg">
 
     <!-- 트위터 공유용 -->
     <meta name="twitter:card" content="summary_large_image">
@@ -53,7 +56,7 @@
 
     <header class="site-header">
         <div class="header-content">
-                        <a href="#" id="home-link" style="text-decoration: none; color: inherit;"><h1 id="site-title" class="site-title">남편 능력고사</h1></a>
+            <a href="#" id="home-link"><h1 id="site-title" class="site-title">남편 능력고사</h1></a>
             <div id="lang-selector">
                 <button class="lang-btn" data-lang="ko">한국어</button>
                 <button class="lang-btn" data-lang="en">English</button>
@@ -66,36 +69,51 @@
     <main>
         <div class="container">
             <!-- 시작 화면 -->
-            <div id="start-screen" class="screen">
+            <div id="start-screen" class="screen active">
                 <h2 id="start-title">내 남편 점수는 몇 점일까?</h2>
                 <p id="start-desc">간단한 테스트를 통해 당신의 남편 점수를 확인해보세요!</p>
                 <button id="start-btn" class="btn-primary">테스트 시작하기</button>
                 <div class="ad-placeholder">
-                    <!-- 여기에 구글 광고 코드를 삽입하세요 (상단) -->
-                    <p>광고 영역</p>
+                    <!-- 구글 애드센스 광고 영역 -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
                 </div>
             </div>
 
             <!-- 퀴즈 화면 -->
-            <div id="quiz-screen" class="screen" style="display: none;">
+            <div id="quiz-screen" class="screen">
                 <div id="progress-bar"><div id="progress-bar-inner"></div></div>
                 <h2 id="question-text">질문이 여기에 표시됩니다.</h2>
                 <div id="answer-buttons"></div>
             </div>
 
             <!-- 로딩 화면 -->
-            <div id="loading-screen" class="screen" style="display: none;">
+            <div id="loading-screen" class="screen">
                 <div class="spinner"></div>
                 <p id="loading-text">결과를 분석 중입니다...</p>
             </div>
 
             <!-- 결과 화면 -->
-            <div id="result-screen" class="screen" style="display: none;">
+            <div id="result-screen" class="screen">
                 <h2 id="result-title">결과 제목</h2>
                 <p id="result-description">결과 설명이 여기에 표시됩니다.</p>
+                <div class="share-buttons">
+                    <button id="share-kakao" class="share-btn kakao">카카오톡 공유하기</button>
+                    <button id="share-facebook" class="share-btn facebook">페이스북 공유하기</button>
+                    <button id="copy-link" class="share-btn link">링크 복사하기</button>
+                </div>
                 <div class="ad-placeholder">
-                    <!-- 여기에 구글 광고 코드를 삽입하세요 (하단) -->
-                    <p>광고 영역</p>
+                    <!-- 구글 애드센스 광고 영역 -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
                 </div>
                 <button id="retry-btn" class="btn-secondary">다시하기</button>
             </div>
@@ -107,8 +125,13 @@
     </footer>
 
     <!-- 스크립트 -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="js/script.js" defer></script> <!-- defer 속성 추가 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+            crossorigin="anonymous"></script>
+    <!-- 카카오톡 공유하기 -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <!-- 메인 스크립트 -->
+    <script src="js/script.js" defer></script>
 
 </body>
 </html>

@@ -1,0 +1,121 @@
+{
+  "lang": "en",
+  "title": "The Official Husband Score",
+  "site_header_title": "Husband Grade: The Parenting Gauntlet",
+  "footer_text": "© 2025 Husband-Test. All Rights Reserved.",
+  "start_screen_title": "My Husband: Partner-in-Crime or Main Culprit?",
+  "start_screen_desc": "One minute he's your rock, the next he's... just a rock. Let's find out his official score in the parenting olympics!",
+  "start_button": "Grade My Husband",
+  "loading_text": "Analyzing husband's behavioral matrix... Please wait.",
+  "questions": [
+    {
+      "question": "When your in-laws start 'gently suggesting' how you should raise your child, your husband...",
+      "answers": [
+        { "text": "Steps in smoothly, says 'Thanks for the advice, Mom, but we've got this as a team,' and checks in with you later.", "points": 10 },
+        { "text": "Offers a tense smile and tries to telepathically change the subject.", "points": 5 },
+        { "text": "Nods along and later tells you, 'You know, she kind of has a point.'", "points": 2 }
+      ]
+    },
+    {
+      "question": "When your own parents need help with something, like moving heavy furniture, your husband...",
+      "answers": [
+        { "text": "Rolls up his sleeves and helps out as soon as you ask.", "points": 10 },
+        { "text": "Agrees to help, but you have to remind him a few times before he actually gets to it.", "points": 5 },
+        { "text": "Says something vague like, 'Yeah, maybe this weekend if I have time...' and hopes you forget.", "points": 2 }
+      ]
+    },
+    {
+      "question": "After a nightmare night with the baby, the first thing he says in the morning is...",
+      "answers": [
+        { "text": "'You're a superhero. Let me get you some coffee.'", "points": 10 },
+        { "text": "'How's the baby?' - completely overlooking the person who was up all night.", "points": 5 },
+        { "text": "'Ugh, I'm so exhausted.'", "points": 1 }
+      ]
+    },
+    {
+      "question": "During your postpartum recovery, his general attitude is...",
+      "answers": [
+        { "text": "A little clumsy but incredibly caring, constantly asking, 'What can I get for you?'", "points": 10 },
+        { "text": "Mostly hands-off, but at least he doesn't expect you to wait on him.", "points": 5 },
+        { "text": "He has a 'snap out of it' vibe, as if everyone else just bounces back instantly.", "points": 0 }
+      ]
+    },
+    {
+      "question": "Regarding intimacy after childbirth, your husband...",
+      "answers": [
+        { "text": "Focuses on emotional connection, making it clear there's no pressure and you can set the pace.", "points": 10 },
+        { "text": "Seems a bit lost and avoids the topic, not knowing what to do or say.", "points": 5 },
+        { "text": "Asks, 'So... are you cleared by the doctor yet?' putting his needs first.", "points": 1 }
+      ]
+    },
+    {
+      "question": "When he gives you some 'free time' away from the baby, he...",
+      "answers": [
+        { "text": "Genuinely encourages you to relax, saying 'I've got this. Go enjoy yourself, you've earned it.'", "points": 10 },
+        { "text": "Agrees, but then texts you every hour asking 'When are you coming back?'", "points": 5 },
+        { "text": "Makes you feel guilty for leaving, sighing, 'Well, I guess my weekend is shot.'", "points": 1 }
+      ]
+    },
+    {
+      "question": "When it comes to chores now that the baby's here...",
+      "answers": [
+        { "text": "He's taken ownership of his share—trash, dishes, laundry—without being asked.", "points": 10 },
+        { "text": "He'll do a chore if you specifically assign it to him, but rarely takes initiative.", "points": 4 },
+        { "text": "Acts like his 'help' with the baby exempts him from all household duties.", "points": 0 }
+      ]
+    },
+    {
+      "question": "When you mention wanting a luxury item you've had your eye on, he...",
+      "answers": [
+        { "text": "Is supportive: 'You work so hard and deserve to treat yourself.'", "points": 10 },
+        { "text": "Gets a little suspicious: 'Okay... what's the real reason you want it?'", "points": 4 },
+        { "text": "Immediately shuts it down: 'Are you serious? We have a baby now.'", "points": 1 }
+      ]
+    },
+    {
+      "question": "You tell him you popped over to your parents' place for a bit while he was at work. He says...",
+      "answers": [
+        { "text": "'Oh, that's great! I'm glad you got a break from the house.'", "points": 10 },
+        { "text": "Doesn't seem to care one way or the other, just grunts in response.", "points": 5 },
+        { "text": "Gets defensive: 'Why didn't you tell me you were going?'", "points": 1 }
+      ]
+    },
+    {
+      "question": "When you're feeling down about your post-baby body, your husband...",
+      "answers": [
+        { "text": "Pulls you into a hug and tells you, 'You're more beautiful to me than ever.'", "points": 10 },
+        { "text": "Tries to 'fix' it with suggestions like, 'We could start working out together!'", "points": 4 },
+        { "text": "Gets quiet and awkward, clearly wishing he were anywhere else.", "points": 0 }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "min_score": 85,
+      "title": "A+ Husband: You've Got a Keeper!",
+      "description": "This man is a true partner. He sees you, he supports you, and he's in the trenches with you. He knows that 'family' is a team sport and you're the MVP."
+    },
+    {
+      "min_score": 65,
+      "title": "Solid B: Good Man, Good Heart",
+      "description": "He's a good guy who loves his family. He might not always know the perfect thing to say or do, but his intentions are golden. A little communication goes a long way with him."
+    },
+    {
+      "min_score": 45,
+      "title": "C-Tier: Needs a System Update",
+      "description": "He loves you, but he's still running on 'single guy' software. He might be too focused on his own stress to see yours. An honest, gentle conversation is needed to install the 'Family Man' patch."
+    },
+    {
+      "min_score": 20,
+      "title": "D for Danger Zone: Major Communication Error",
+      "description": "He seems to think he's a guest star in this season of 'Family Life.' Your efforts might feel invisible to him. It's time for a serious talk about what partnership really means."
+    },
+    {
+      "min_score": 0,
+      "title": "F: Houston, We Have a Husband Problem",
+      "description": "You're supposed to be a team, but it feels like you're playing two different games. He's making you feel more alone than ever. This test could be the wake-up call you both need."
+    }
+  ],
+  "share_text": "I officially graded my husband... here are the results (Parenting Edition)!",
+  "retry_button": "Grade Him Again"
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 기본 SEO 태그 -->
+    <title>남편 점수 테스트</title>
+    <meta name="description" content="때로는 듬직하고, 때로는 웬수 같은 내 남편! 10개의 간단한 테스트로 그의 진짜 능력치를 알아보세요! 아내만 아는 남편의 점수, 지금 바로 확인해보세요.">
+    <link rel="canonical" href="https://your-website-url.com/"> <!-- 나중에 실제 웹사이트 주소로 변경하세요 -->
+
+    <!-- 소셜 미디어 공유용 (Open Graph) -->
+    <meta property="og:title" content="남편 점수 테스트">
+    <meta property="og:description" content="애증의 내 남편, 점수로 환산하면 몇 점일까? 지금 바로 확인해보세요!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-website-url.com/"> <!-- 나중에 실제 웹사이트 주소로 변경하세요 -->
+    <meta property="og:image" content="https://your-website-url.com/og-image.jpg"> <!-- 나중에 실제 이미지 주소로 변경하세요 (1200x630 권장) -->
+
+    <!-- 트위터 공유용 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="남편 점수 테스트">
+    <meta name="twitter:description" content="애증의 내 남편, 점수로 환산하면 몇 점일까? 지금 바로 확인해보세요!">
+    <meta name="twitter:image" content="https://your-website-url.com/og-image.jpg"> <!-- 나중에 실제 이미지 주소로 변경하세요 -->
+
+    <!-- 폰트 및 스타일시트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- 구조화된 데이터 (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Quiz",
+      "name": "남편 점수 테스트",
+      "description": "10개의 질문을 통해 남편의 육아 및 가정 생활 점수를 알아보는 재미있는 퀴즈입니다.",
+      "hasPart": [
+        {
+          "@type": "Question",
+          "name": "시부모님께서 우리의 육아 방식에 대해 한마디 하실 때, 남편의 반응은?"
+        },
+        {
+          "@type": "Question",
+          "name": "밤새 아기 돌보느라 지친 나에게, 아침에 남편이 하는 첫마디는?"
+        }
+      ]
+    }
+    </script>
+
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-content">
+                        <a href="#" id="home-link" style="text-decoration: none; color: inherit;"><h1 id="site-title" class="site-title">남편 능력고사</h1></a>
+            <div id="lang-selector">
+                <button class="lang-btn" data-lang="ko">한국어</button>
+                <button class="lang-btn" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="ja">日本語</button>
+                <button class="lang-btn" data-lang="zh">中文</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- 시작 화면 -->
+            <div id="start-screen" class="screen">
+                <h2 id="start-title">내 남편 점수는 몇 점일까?</h2>
+                <p id="start-desc">간단한 테스트를 통해 당신의 남편 점수를 확인해보세요!</p>
+                <button id="start-btn" class="btn-primary">테스트 시작하기</button>
+                <div class="ad-placeholder">
+                    <!-- 여기에 구글 광고 코드를 삽입하세요 (상단) -->
+                    <p>광고 영역</p>
+                </div>
+            </div>
+
+            <!-- 퀴즈 화면 -->
+            <div id="quiz-screen" class="screen" style="display: none;">
+                <div id="progress-bar"><div id="progress-bar-inner"></div></div>
+                <h2 id="question-text">질문이 여기에 표시됩니다.</h2>
+                <div id="answer-buttons"></div>
+            </div>
+
+            <!-- 로딩 화면 -->
+            <div id="loading-screen" class="screen" style="display: none;">
+                <div class="spinner"></div>
+                <p id="loading-text">결과를 분석 중입니다...</p>
+            </div>
+
+            <!-- 결과 화면 -->
+            <div id="result-screen" class="screen" style="display: none;">
+                <h2 id="result-title">결과 제목</h2>
+                <p id="result-description">결과 설명이 여기에 표시됩니다.</p>
+                <div class="ad-placeholder">
+                    <!-- 여기에 구글 광고 코드를 삽입하세요 (하단) -->
+                    <p>광고 영역</p>
+                </div>
+                <button id="retry-btn" class="btn-secondary">다시하기</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p id="footer-text">&copy; 2025 Husband-Test. All Rights Reserved.</p>
+    </footer>
+
+    <!-- 스크립트 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js" defer></script> <!-- defer 속성 추가 -->
+
+</body>
+</html>

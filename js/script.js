@@ -132,6 +132,9 @@ $(document).ready(function() {
         $('#result-title').text(result.title);
         $('#result-description').text(result.description);
         showScreen('result');
+        
+        // 공유 기능 초기화
+        shareResult(state.score, result.title, result.description);
     }
 
     // --- 이벤트 리스너 --- //

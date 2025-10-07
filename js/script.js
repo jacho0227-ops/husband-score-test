@@ -8,6 +8,9 @@ $(document).ready(function() {
     };
 
     let languageData;
+    
+    // 페이지 로드 시 기본 언어(한국어) 설정
+    loadLanguage('ko');
 
 
 

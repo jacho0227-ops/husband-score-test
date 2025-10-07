@@ -1,13 +1,13 @@
 /* 기본 & 폰트 설정 */
 body {
     font-family: 'Noto Sans KR', sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
     margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    color: #333;
+    line-height: 1.6;
 }
 
 /* 헤더 & 푸터 */
@@ -76,19 +76,21 @@ body {
 /* 프로그레스 바 */
 #progress-bar {
     width: 100%;
-    background-color: #e4e6eb;
-    border-radius: 5px;
-    height: 10px;
-    margin-bottom: 20px;
+    background: linear-gradient(to right, rgba(106, 142, 251, 0.2) 0%, rgba(106, 142, 251, 0.1) 100%);
+    border-radius: 10px;
+    height: 12px;
+    margin-bottom: 25px;
     overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 #progress-bar-inner {
     width: 0%;
     height: 100%;
-    background-color: #1877f2;
-    border-radius: 5px;
-    transition: width 0.3s ease-in-out;
+    background: linear-gradient(90deg, #6e8efb 0%, #4777ee 100%);
+    border-radius: 10px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 4px rgba(106, 142, 251, 0.3);
 }
 
 /* 메인 콘텐츠 */
@@ -106,12 +108,21 @@ main {
 .container {
     width: 100%;
     max-width: 500px;
-    background-color: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 35px;
     text-align: center;
     overflow: hidden;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
 .screen {
@@ -122,59 +133,75 @@ main {
 
 /* 제목 & 설명 */
 h2 {
-    color: #1c1e21;
-    margin-bottom: 10px;
-    font-size: 24px;
-    word-break: keep-all; /* 질문이 잘리지 않도록 */
+    color: #2e3440;
+    margin-bottom: 15px;
+    font-size: 26px;
+    word-break: keep-all;
+    line-height: 1.4;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
 p {
-    color: #606770;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
+    color: #4c566a;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 25px;
     word-break: keep-all;
+    opacity: 0.95;
 }
 
 /* 버튼 */
 .btn-primary, .btn-secondary, .answer-btn {
     width: 100%;
-    padding: 15px;
+    padding: 16px;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.2s, transform 0.1s;
-    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    margin-bottom: 12px;
+    position: relative;
+    overflow: hidden;
 }
 
 .btn-primary {
-    background-color: #1877f2; /* Facebook Blue */
+    background: linear-gradient(135deg, #6e8efb 0%, #4777ee 100%);
     color: #ffffff;
+    box-shadow: 0 4px 15px rgba(106, 142, 251, 0.4);
 }
 
 .btn-primary:hover {
-    background-color: #166fe5;
+    background: linear-gradient(135deg, #5d7dfa 0%, #3666dd 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(106, 142, 251, 0.6);
 }
 
 .btn-secondary {
-    background-color: #e4e6eb;
-    color: #1c1e21;
+    background: linear-gradient(135deg, #e6e9f0 0%, #d8dee9 100%);
+    color: #2e3440;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .btn-secondary:hover {
-    background-color: #d8dbe0;
+    background: linear-gradient(135deg, #d8dee9 0%, #c8ccd5 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .answer-btn {
-    background-color: #f0f2f5;
-    color: #1c1e21;
+    background: white;
+    color: #2e3440;
+    border: 2px solid #e6e9f0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     text-align: center;
 }
 
 .answer-btn:hover {
-    background-color: #e4e6eb;
+    background: #f8f9fb;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-color: #d8dee9;
 }
 
 .btn-primary:active, .btn-secondary:active, .answer-btn:active {

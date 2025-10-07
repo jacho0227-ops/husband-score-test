@@ -234,48 +234,7 @@ p {
     display: flex;
 }
 
-/* 공유 버튼 */
-.share-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    margin: 20px 0;
-}
 
-.share-btn {
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.share-btn.kakao {
-    background-color: #FEE500;
-    color: #000000;
-}
-
-.share-btn.facebook {
-    background-color: #1877F2;
-    color: white;
-}
-
-.share-btn.link {
-    background-color: #2ecc71;
-    color: white;
-}
-
-.share-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
 
 /* 헤더 링크 스타일 */
 #home-link {
